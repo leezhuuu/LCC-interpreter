@@ -2,8 +2,8 @@ import requests
 import json
 import subprocess
 
-api_key = "fk-mcwP2-UJJxzzr60_pE1jRJXErwy_YSFsWHYw51Efgb4"
-api_endpoint = "https://ai.fakeopen.com/v1/chat/completions"
+api_key = "xxxxxxxx"
+api_endpoint = "xxxxxxxx"
 # 设置请求头
 headers = {
     "Content-Type": "application/json",
