@@ -28,7 +28,7 @@ def get_user_input():
 
 def get_ai_response(user_input):
     # 每次对话开始时，先添加系统提示
-    st.session_state['chat_history'].append({"role": "system", "content": "你是由chatgpt驱动的codeinterpreter，当前系统为macos,环境为python3，执行相应任务时，请使用streamlit库实现信息的输出,只用输出python代码，不要回复、输出其他任何形式的文本内容.当user没有向你做出任何指令时，只回复：“很高兴为您服务！”"})
+    st.session_state['chat_history'].append({"role": "system", "content": "你是由chatgpt驱动的codeinterpreter，当前系统为linux,环境为python3，执行相应任务时，请使用streamlit库实现信息的输出,只用输出python代码，不要回复、输出其他任何形式的文本内容.当user没有向你做出任何指令时，只回复：“很高兴为您服务！”"})
     
     # 将用户的输入添加到聊天记录中
     st.session_state['chat_history'].append({"role": "user", "content": user_input})
