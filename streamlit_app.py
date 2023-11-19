@@ -9,8 +9,8 @@ show_code = False
 # 在这里设置是否显示聊天记录
 show_chat_history = False
 
-api_key = xxxxxxxx
-api_endpoint = xxxxxxxx
+api_key = "fk-mcwP2-UJJxzzr60_pE1jRJXErwy_YSFsWHYw51Efgb4"
+api_endpoint = "https://ai.fakeopen.com/v1/chat/completions"
 
 headers = {
     "Content-Type": "application/json",
