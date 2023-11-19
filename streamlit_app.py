@@ -77,7 +77,7 @@ def execute_code(code):
 
 def main():
     st.title("Code Interpreter")
-    st.write("你好，我是Leezhu制作的code-interpreter，是下一代贾维斯的基座引擎。请问有什么我可以帮您的吗？")
+    st.write("你好，我是Leezhu制作的code-interpreter，拥有代码生成、数学计算等功能。是下一代贾维斯的基座引擎。请问有什么我可以帮您的吗？")
     user_input = get_user_input()
     if user_input.lower() == 'exit':
         st.stop()
