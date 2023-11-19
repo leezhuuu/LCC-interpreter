@@ -33,13 +33,13 @@ def get_ai_response(user_input):
     # 将用户的输入添加到聊天记录中
     st.session_state['chat_history'].append({"role": "user", "content": user_input})
 
-    # 如果聊天记录超过2000字，只保留前2000字
-    if len(''.join([message["content"] for message in st.session_state['chat_history']])) > 4000:
-        while len(''.join([message["content"] for message in st.session_state['chat_history']])) > 4000:
+    # 如果聊天记录超过16000字，只保留前16000字
+    if len(''.join([message["content"] for message in st.session_state['chat_history']])) > 16000:
+        while len(''.join([message["content"] for message in st.session_state['chat_history']])) > 16000:
             st.session_state['chat_history'].pop(0)
 
     data = {
-        "model": "gpt-3.5-turbo",
+        "model": "gpt-3.5-turbo-16k-0613",
         "messages": st.session_state['chat_history']
     }
 
